@@ -1,5 +1,4 @@
 //your JS code here. If required.
-/*
 const form = document.querySelector('form');
 form.addEventListener('submit', (event) => {
 	event.preventDefault();
@@ -14,10 +13,10 @@ form.addEventListener('submit', (event) => {
 	}
 	
 
-	const res = checkExistingUser(userData);
-	if(!res) {
+	// const res = checkExistingUser(userData);
 		alert(`Logged in as ${name}`);
-	}
+	// if(!res) {
+	// }
 })
 
 
@@ -39,9 +38,8 @@ function checkExistingUser(userData) {
 	return false;
 }
 
-checkExistingUser();
+// checkExistingUser();
 
-*/
 
 
 
