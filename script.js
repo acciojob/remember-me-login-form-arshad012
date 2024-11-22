@@ -13,10 +13,10 @@ form.addEventListener('submit', (event) => {
 	}
 	
 
-	// const res = checkExistingUser(userData);
+	const res = checkExistingUser(userData);
+	if(!res) {
 		alert(`Logged in as ${name}`);
-	// if(!res) {
-	// }
+	}
 })
 
 
@@ -38,7 +38,7 @@ function checkExistingUser(userData) {
 	return false;
 }
 
-// checkExistingUser();
+checkExistingUser();
 
 
 
