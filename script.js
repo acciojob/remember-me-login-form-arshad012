@@ -19,12 +19,12 @@ form.addEventListener('submit', (event) => {
 	}
 })
 
+
 function checkExistingUser(userData) {
 	const existingData = JSON.parse(localStorage.getItem('users'));
 	if(existingData && (existingData.name == userData.name) && (existingData.password == userData.password)) {
-		const existUserBtn = document.createElement('button');
-		existUserBtn.innerText = 'Login as existing user.';
-		existUserBtn.id = 'existing';
+		const existUserBtn = document.getElementById('existing');
+		existUserBtn.style.display = 'block';
 		existUserBtn.onclick = () => {
 			alert(`Logged in as ${existingData.name}`);
 		}
